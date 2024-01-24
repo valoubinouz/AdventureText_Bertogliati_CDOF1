@@ -2,45 +2,37 @@ print("hello")
 print("Welcome to valoubinouz adventure game")
 
 ### Print a welcome message
-print("Welcome to the Haunted Mansion!")
-print("You are a distant family member of a rich millionaire who has just passed way, leaving this mansion to you.")
-print("As the newfound owner, you decide to pay a visit to the mansion.")
-print("The house is dated, creaky, and falling apart. You walk in the front door.")
-print("Do you want to enter the living room or the dining room?")
+print("Welcome to the the crow and the fox fairytale !")
+print("You are a the smart fox, tryning to get the cheese from the crow mouth.")
+print("As the fox you have to use tricks to steal the cheese")
+print("The crow is currently on top of tree, looking down on you")
+print("Do you want to talk to the crow or climb to the tree ?")
 
 ### Prompt user for a choice
-roomChoice = input("> ")
+firstChoice = input("> ")
 
-if(roomChoice == "living room"):
-  print("You enter the living room.")
-  print("As you walk in, you see a sleeping pitbull guarding some gold jewelry.")
-  print("Do you want to steal the jewelry from the pitbull?")
+if(firstChoice == "talk"):
+  print("You start talking to the crow")
+  print("After introducting yourself, what do you ask him ? ")
+  print("You ask him about his wife and kid Or you compliment him on his voice ?")
 
-  pitBullChoice = input("> ")
+  talkChoice = input("> ")
 
-  if(pitBullChoice == "yes"):
-    print("You attempt to steal the jewelry, but it wakes up and rips you to shreds.")
-    print("You are now dead.")
-  elif(pitBullChoice == "no"):
-    print("You decide to not steal the dog's jewelry.")
-    print("You turn around and leave the house safely.")
+  if(talkChoice == "wife and kid"):
+    print("The crow get scared for his family and flies away with the cheese ! ")
+    print("You lost...")
+  elif(talkChoice == "compliment"):
+    print("You chose to compliment the crow on his voice...")
+    print("The crow loves the compliment !, he trust you ")
+    print("he let the cheese fall while singing for you ! ")
+    print ("Good Job, you have successfully gotten the cheese back ! ")
   else:
-    print("Invalid choice. Please enter yes or no.")
-elif(roomChoice == "dining room"):
-  print("You chose to go into the dining room.")
-  print("As you walk in, you see a shiny vase on the table.")
-  print("Do you want to open the vase?")
+    print("Invalid choice. Please enter 'wife and kid' or 'compliment'")
 
-  vaseChoice = input("> ")
+elif(firstChoice == "climb"):
+  print("You chose to climb the tree")
+  print("As you are climbing, The crow get scared and fly away")
+  print("You lost :(")
 
-  if(vaseChoice == "yes"):
-    print("You open the vase and find a pile of bones!")
-  elif(vaseChoice == "no"):
-    print("You decide not to open the shiny vase.")
-    print("As you turn to leave, you hear a cracking sound coming from the corner.")
-    print("A dark figure with glowing red eyes launches at you, knocking you unconcious")
-    print("You wake up in your bed. It was all a dream.")
-  else:
-    print("Invalid choice. Please enter yes or no.")
 else:
-  print("Invalid choice. Please enter living room or dining room.")
+  print("Invalid choice. Please enter climb or talk")
