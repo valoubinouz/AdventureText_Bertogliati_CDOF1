@@ -5,6 +5,8 @@ The story is based on the famous french fable : "The Crow And The Fox" (Le Corbe
 
 You might want to read it before : [French and Enlish version here](https://www.frenchtoday.com/french-poetry-reading/poem-le-corbeau-et-le-renard-la-fontaine/)
 
+This is still in a develoment phase, don't be surprised about the short length of the scirpt and the few possibilities there are. The project is gonna grow with the time.
+
 ## Setup & Deployment
 There is no particular setup or package that are required for this project 
 
