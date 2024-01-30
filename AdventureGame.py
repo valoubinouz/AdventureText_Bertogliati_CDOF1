@@ -9,14 +9,14 @@ print("The crow is currently on top of tree, looking down on you")
 print("Do you want to talk to the crow or climb to the tree ?")
 
 ### Prompt user for a choice
-firstChoice = input("> ")
+firstChoice = input("enter \"climb\" or \"talk\" : ")
 
 if(firstChoice == "talk"):
   print("You start talking to the crow")
   print("After introducting yourself, what do you ask him ? ")
   print("You ask him about his wife and kid Or you compliment him on his voice ?")
 
-  talkChoice = input("> ")
+  talkChoice = input("enter \"wife and kid\" or \"compliment\" : ")
 
   if(talkChoice == "wife and kid"):
     print("The crow get scared for his family and flies away with the cheese ! ")
