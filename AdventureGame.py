@@ -1,38 +1,45 @@
-print("hello")
-print("Welcome to valoubinouz adventure game")
+def handle_talk():
+    print("You start talking to the crow.")
+    print("After introducing yourself, what do you ask him?")
+    print("Do you ask him about his wife and kid, or do you compliment him on his voice?")
 
-### Print a welcome message
-print("Welcome to the the crow and the fox fairytale !")
-print("You are a the smart fox, tryning to get the cheese from the crow mouth.")
-print("As the fox you have to use tricks to steal the cheese")
-print("The crow is currently on top of tree, looking down on you")
-print("Do you want to talk to the crow or climb to the tree ?")
+    while True:
+        talk_choice = input("Enter 'wife and kid' or 'compliment': ").lower()
+        if talk_choice == "wife and kid":
+            print("The crow gets scared for his family and flies away with the cheese!")
+            print("You lost...")
+            break
+        elif talk_choice == "compliment":
+            print("You chose to compliment the crow on his voice...")
+            print("The crow loves the compliment! He trusts you.")
+            print("He lets the cheese fall while singing for you!")
+            print("Good job, you have successfully gotten the cheese!")
+            break
+        else:
+            print("Invalid choice. Please enter 'wife and kid' or 'compliment'.")
 
-### Prompt user for a choice
-firstChoice = input("enter \"climb\" or \"talk\" : ")
+def handle_climb():
+    print("You chose to climb the tree.")
+    print("As you are climbing, the crow gets scared and flies away.")
+    print("You lost :(")
 
-if(firstChoice == "talk"):
-  print("You start talking to the crow")
-  print("After introducting yourself, what do you ask him ? ")
-  print("You ask him about his wife and kid Or you compliment him on his voice ?")
+def main():
+    print("Welcome to the crow and the fox fairytale!")
+    print("You are the smart fox, trying to get the cheese from the crow's mouth.")
+    print("As the fox, you have to use tricks to steal the cheese.")
+    print("The crow is currently on top of a tree, looking down on you.")
+    print("Do you want to talk to the crow or climb the tree?")
 
-  talkChoice = input("enter \"wife and kid\" or \"compliment\" : ")
+    while True:
+        first_choice = input("Enter 'climb' or 'talk': ").lower()
+        if first_choice == "talk":
+            handle_talk()
+            break
+        elif first_choice == "climb":
+            handle_climb()
+            break
+        else:
+            print("Invalid choice. Please enter 'climb' or 'talk'.")
 
-  if(talkChoice == "wife and kid"):
-    print("The crow get scared for his family and flies away with the cheese ! ")
-    print("You lost...")
-  elif(talkChoice == "compliment"):
-    print("You chose to compliment the crow on his voice...")
-    print("The crow loves the compliment !, he trust you ")
-    print("he let the cheese fall while singing for you ! ")
-    print ("Good Job, you have successfully gotten the cheese back ! ")
-  else:
-    print("Invalid choice. Please enter 'wife and kid' or 'compliment'")
-
-elif(firstChoice == "climb"):
-  print("You chose to climb the tree")
-  print("As you are climbing, The crow get scared and fly away")
-  print("You lost :(")
-
-else:
-  print("Invalid choice. Please enter climb or talk")
+if __name__ == "__main__":
+    main()
